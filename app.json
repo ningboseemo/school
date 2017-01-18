@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/news/news",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/courses/courses",
+    "pages/consult/consult",
+    "pages/case_course/case_course",
+    "pages/teachers/teachers"
+  ],
+  "window":{
+    "backgroundColor":"#f2f1f6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#ed653b",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText":"瞄财商学院",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "color":"#4d4d4d",
+    "selectedColor":"#ff6837",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "position":"bottom",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"images/index_icon.png",
+      "selectedIconPath":"images/index_icon_select.png"
+    },
+  {
+      "pagePath":"pages/courses/courses",
+      "text":"课程",
+      "iconPath":"images/courses_icon.png",
+      "selectedIconPath":"images/courses_icon_select.png"
+    },
+  {
+      "pagePath":"pages/consult/consult",
+      "text":"咨询",
+      "iconPath":"images/consult_icon.png",
+      "selectedIconPath":"images/consult_icon_select.png"
+    },
+  {
+      "pagePath":"pages/me/me",
+      "text":"我的",
+      "iconPath":"images/me_icon.png",
+      "selectedIconPath":"images/me_icon_select.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

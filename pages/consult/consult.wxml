@@ -1,0 +1,10 @@
+<!--pages/consult/consult.wxml-->
+
+<view class="section">
+  <view class="section__title">flex-direction: row</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green {{class[0]}}">1</view>
+    <view bindtap="shift" class="flex-item bc_red {{class[2]}}">卍</view>
+    <view class="flex-item bc_blue {{class[1]}}">3</view>
+  </view>
+</view>

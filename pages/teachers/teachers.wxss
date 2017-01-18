@@ -1,0 +1,75 @@
+/* pages/teachers/teachers.wxss */
+.teacher_classify_container{
+    height: 100rpx;
+    background: #fff;
+    border-bottom: 1rpx #e3e3e6 solid;
+    line-height: 100rpx;
+    width: 100%;
+}
+.teacher_classify{
+    width: 130%;
+}
+.teacher_classify_item{
+    display: inline-block;
+    padding: 0 35rpx;
+    color: #4d4d4d;
+    font-size: 32rpx;
+}
+.active{
+    color: #ed653b;
+}
+.teacher_container{
+    height: 240rpx;
+    background: #fff;
+    padding: 0 20rpx;
+    position: relative
+}
+.teacher_photo{
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+    vertical-align: -50rpx;
+}
+.teacher_txt{
+    display: inline-block;
+    width: 50%;
+}
+.teacher_name{
+    font-size: 36rpx;
+}
+.profession{
+    color: #999;
+    font-size: 28rpx;
+    margin-left: 20rpx; 
+}
+.teacher_container navigator{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30rpx 0;
+    border-bottom: 1rpx #e3e3e6 solid;
+}
+.good_field{
+    font-size: 30rpx;
+    margin-top: 30rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.follow{
+    position: absolute;
+    text-align: center;
+    font-size:26rpx;
+    top: 60rpx;
+    right: 30rpx; 
+}
+.follow image{
+    width: 60rpx;
+    height: 60rpx;   
+}
+.follow_state{
+    color: #ed653b;
+}
+.infollow_state{
+    color: #a3a3a3
+}

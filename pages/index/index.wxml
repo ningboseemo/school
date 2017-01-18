@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true">
+<swiper class="index_swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500" circular="true">
+	<block wx:for="{{swipers}}">
+		<swiper-item class="swiper_item">
+			<image src="{{item.imageUrl}}" />
+			<view class="swiper_text">{{item.text}}</view>
+		</swiper-item>
+	</block>
+</swiper>
+<view class="notice_index">
+	<image class="icon" src="../../images/notice_icon.png"></image>
+	公告题目公告题目公告题目公告题目公告题目公告题目
+</view>
+<template name="courses">
+	<view class="courses_container">
+		<view class="courses_container_title">
+			<span>{{title}}</span>
+			<navigator url="{{url}}">更多</navigator>
+		</view>
+		<block wx:for="{{courseList}}">
+		<view class="course_item">
+			<view class="course_img" >
+				<image src="{{item.courseImg}}"></image>
+				<view class="{{item.courseType=='vip' ? 'curese_type_free':'curese_type_vip'}}">{{item.courseTypeText}}</view>
+			</view>
+			<view class="course_title">{{item.courseTitle}}</view>
+			<view class="start_time" wx:if="{{item.courseStartTime}}">{{item.courseStartTime}} 开播</view>
+		</view>
+		</block>
+	</view>
+</template>
+<template is="courses" data="{{...CourseCase}}"/>
+<template is="courses" data="{{...directed}}"/>
+<template is="courses" data="{{...played}}"/>
+<view class="courses_container">
+		<view class="courses_container_title">
+			<span>推荐明星</span>
+			<navigator url="../teachers/teachers">更多</navigator>
+		</view>
+		<block wx:for="{{teachers}}">
+		<view class="course_teachers">
+			<image src="{{item.teacherPhoto}}"></image>
+			<view class="course_teacher_name">{{item.teacherName}}</view>
+		</view>
+		</block>
+	</view>
+</scroll-view>

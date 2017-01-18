@@ -1,0 +1,48 @@
+<!--pages/teachers/teachers.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="addteacher">
+    <scroll-view scroll-x="true" class="teacher_classify_container">
+        <view class="teacher_classify">
+            <view wx:for="{{teacherClassifyList}}" bindtap="classify" data-id="{{index}}" class="teacher_classify_item {{activeId==index ? 'active':'' }}">{{item}}</view>
+        </view>
+    </scroll-view>
+    <block wx:for="{{teacherList}}">
+    <view  data-bool="{{item.followState}}" class="teacher_container">
+        <navigator url="url">
+            <image class="teacher_photo" src="{{item.teacherImg}}"></image>
+            <view class="teacher_txt">
+                <view class="teacher_name">
+                    {{item.teacherName}}
+                    <span class="profession">{{item.teacherProfession}}</span>
+                </view>
+                <view class="good_field">{{item.goodField}}</view>
+            </view>
+        </navigator>
+        <view bindtap="follow" data-teacherid="{{index}}" class="follow">
+            <block wx:if="{{item.followState}}">
+                <image src="../../images/infollow_icon.png"></image>
+                <view class="follow_state">未关注</view>
+            </block>
+            <block wx:else>
+                <image src="../../images/follow_icon.png"></image>
+                <view class="infollow_state">已关注</view>
+            </block>
+        </view>
+    </view>
+    </block>
+</scroll-view>
+<!--
+{
+    "teacherId":,
+    "teacherImg":"",
+    "teacherName":"",
+    "teacherProfession":"",
+    "goodField":"",
+    "followState":false
+}
+{
+    "followImg":"",
+    "infollowImg":"",
+    "followText":"",
+    "infollowText":""
+}
+-->

@@ -1,0 +1,76 @@
+<!--pages/me/me.wxml-->
+<scroll-view scroll-y="true">
+    <view class="user">
+        <image class="user_photo" src="../../images/user_photo.png"></image >
+        <view class="user_name">用户昵称</view>
+        <image class="vip_sign" src="../../images/mine_icon_vip_sign.png"></image>
+        <navigator class="news" url="url">消息<span></span></navigator>
+    </view>
+    <view class="mine_nav mine_vip">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_vip.png"></image>
+            <view class="nav_name">我的VIP</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+    <view class="mine_nav mine_pay">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_zichan.png"></image>
+            <view class="nav_name">资产中心</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+
+    <view class="mine_nav mine_directcourse">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_kecheng.png"></image>
+            <view class="nav_name">我的直播</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+    <view class="mine_nav mine_record">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_jilu.png"></image>
+            <view class="nav_name">录播观看记录</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+    <view class="mine_nav mine_down">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_xiazai.png"></image>
+            <view class="nav_name">我的下载</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+    <view class="mine_nav mine_consult">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_zixun.png"></image>
+            <view class="nav_name">我的咨询</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+
+    <view class="mine_nav mine_cellect">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_favorite.png"></image>
+            <view class="nav_name">我的收藏</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+    <view class="mine_nav mine_follow">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_focus.png"></image>
+            <view class="nav_name">我的关注</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+
+    <view class="mine_nav mine_set">
+        <navigator url="url">
+            <image class="nav_icon" src="../../images/mine_icon_set.png"></image>
+            <view class="nav_name">设置</view>
+            <image class="nav_ringht_icon" src="../../images/mine_icon_right.png"></image>
+        </navigator>
+    </view>
+</scroll-view>
+

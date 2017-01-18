@@ -1,0 +1,42 @@
+<!--pages/courses/courses.wxml-->
+<scroll-view scroll-y="true" lower-threshold="50" bindscrolltolower="refresh">
+    <view class="calssify_select">
+        <view bindtap="selectShow" class="calssify_select_btn">筛选<em class="{{courseSelectShow ? 'select_icon':''}}"></em></view>
+        <view class="calssify_select_code">
+            <span bindtap="selectNew" class="calssify_new {{courseSelectCode.new ? 'calssify_select_active':''}}">最新</span>
+            <span bindtap="selectPeople" class="calssify_people {{courseSelectCode.people ? 'calssify_select_active':''}}">人气</span>
+        </view>
+        <view wx:if="{{courseSelectShow}}" class="calssify_select_list">
+            <view class="select_list_container">
+                <block wx:for="{{courseSelect}}"  wx:for-index="typeid" wx:for-item="type">
+                <view class="select_title">{{type.title}}</view>
+                <view class="select_list">
+                    <span bindtap="selected" wx:for="{{type.list}}" data-parent="{{typeid}}" data-id="{{index}}" class="{{type.activeid==index ? 'select_active':''}}">{{item}}</span>
+                </view>
+                </block>
+                <view class="select_btn">
+                    <view bindtap="select_reset" class="select_reset_btn">筛选重置</view>
+                    <view bindtap="select_sure" class="select_sure_btn">确定</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="course_container">
+        <block wx:for="{{courses}}">
+        <view class="course_item">
+            <view class="course_img">
+                <image src="{{item.courseImg}}"></image>
+                <view class="{{item.courseCostType=='vip' ? 'course_type_vip':'course_type_free'}}">{{item.courseCostTypeText}}</view>
+            </view>
+            <view class="course_detail">
+                <view class="course_title">{{item.courseTtile}}</view>
+                <view class="course_start_time">{{item.courseStartTime}}</view>
+                <view class="course_teacher_people">
+                    <span class="course_teacher">{{item.teacherNames[0]}}{{item.teacherNames[1]}}</span>
+                    <span class="course_people">{{item.number}}</span>
+                </view>
+            </view>
+        </view>
+        </block>
+    </view>
+</scroll-view>

@@ -1,0 +1,82 @@
+/* pages/me/me.wxss */
+.user{
+    height: 270rpx;
+    background: #ed653b;
+    padding: 20rpx;
+}
+.user_photo{
+    width: 210rpx;
+    height: 210rpx;
+    vertical-align: middle;
+    margin-left: 20rpx;
+    border-radius: 50%;
+    border: 10rpx #f07c58 solid;
+}
+.user_name{
+    display: inline-block;
+    font-size: 40rpx;
+    color: #fff;
+    margin-left: 20rpx;
+}
+.vip_sign{
+    width: 55rpx;
+    height: 30rpx;
+    margin-left: 10rpx;
+}
+.news{
+    display: inline-block;
+    float: right;
+    color: #fff;
+    font-size: 30rpx;
+    margin-right: 20rpx;
+    position: relative;
+    margin-top: 10rpx;
+}
+.news span{
+    display: inline-block;
+    width: 20rpx;
+    height: 20rpx;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -8rpx;
+    top: -8rpx;
+}
+.mine_nav{
+    height: 140rpx;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0rpx 20rpx;
+}
+.mine_nav navigator{
+    border-bottom: 1rpx #e3e3e6 solid;
+    line-height: 140rpx;
+    height: 100%;
+    box-sizing: border-box;
+}
+.nav_icon{
+    width: 60rpx;
+    height: 60rpx;
+    vertical-align: -14rpx;
+    margin-right: 20rpx;
+}
+.nav_name{
+    display: inline-block;
+    color: #4d4d4d;
+    font-size: 36rpx;
+}
+.nav_ringht_icon{
+    width: 24rpx;
+    height: 29rpx;
+    float: right;
+    margin-top: 60rpx;
+}
+.mine_set,.mine_cellect,.mine_directcourse,.mine_vip{
+    margin-top: 30rpx;
+}
+.mine_pay navigator,.mine_consult navigator,.mine_follow navigator,.mine_set navigator{
+    border: none;
+}
+.mine_set{
+    margin-bottom: 20rpx;
+}
